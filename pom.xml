@@ -79,6 +79,13 @@
             <version>3.6.0</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-ec2</artifactId>
+            <version>1.11.606</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -90,7 +97,7 @@
                 <configuration>
                     <compilerArgs>
                         <arg>-Xlint:all,-options,-processing</arg>
-                        <arg>-Werror</arg>
+                        <!-- arg>-Werror</arg -->
                     </compilerArgs>
                 </configuration>
             </plugin>
